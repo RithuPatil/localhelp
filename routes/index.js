@@ -18,7 +18,7 @@ router.post('/add',(req,res,next)=>{
 	console.log(req.body.complaint);
 	newcomplaint= new Local({
 	registration_number:rn(option),
-	complaint:req.body.complaint,
+	complaint:req.body.result.resolvedQuery,
 	locality:req.body.locality,
 	registration_date:new Date,
 	serviced_date:null
