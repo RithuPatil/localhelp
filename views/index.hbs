@@ -1,0 +1,20 @@
+
+<h1><center>ADMIN DATABASE</h1>
+<table style="width:100%" border=1>
+<tr>
+<th>Serial_Number</th>
+<th>Complaint</th>
+<th>Date</th>
+<th>Serviced_Date</th>
+{{#each complaint}}
+<form method="get" action="/update/{{registration_number}}">
+
+<tr><td>{{registration_number}}</td>
+<td>{{complaint}}</td>
+<td>{{registration_date}}</td>
+<td>{{serviced_date}}</td>
+<td><button type="submit"><b>Serviced</b></button></td></tr>
+</form>
+</tr>
+{{/each}}
+</table>
